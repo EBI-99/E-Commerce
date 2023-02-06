@@ -7,7 +7,12 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    DarkMode: typeof import('./src/components/NavBar/DarkMode.vue')['default']
+    NavBar: typeof import('./src/components/NavBar/NavBar.vue')['default']
+    Ofers: typeof import('./src/components/NavBar/Ofers.vue')['default']
+    Offers: typeof import('./src/components/NavBar/offers.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TopHomePage: typeof import('./src/components/TopHomePage.vue')['default']
   }
 }
